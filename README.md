@@ -14,7 +14,7 @@ node twitch.js
 
 ## Twitch result
 
-```JSON
+```json
 [
   {
     "quality": "Source",
@@ -56,7 +56,7 @@ node twitch.js
 
 ## Youtube result
 
-```JSON
+```json
 {
   "upload_date": "20200127",
   "protocol": "https",
