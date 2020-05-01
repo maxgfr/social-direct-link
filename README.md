@@ -1,6 +1,6 @@
 # social-direct-link
 
-Get direct link from youtube, soundcloud, vimeo, twitch channel, etc...
+Get direct link from youtube, soundcloud, vimeo, tiktok, twitch channel, etc...
 
 ## Installation
 
