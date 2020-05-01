@@ -15,15 +15,15 @@ const rl = readline.createInterface({
     output: process.stdout
 });
 
-rl.question("URL of your youtube video : ", function(youtube_url) {
-    url = youtube_url;
+rl.question("URL of your youtube video : ", function(selected_url) {
+    url = selected_url;
     rl.close();
 });
 
 rl.on("close", function() {
   youtubedl.getInfo(url, [], async (err, info) => {
     if (err) console.log(err)
-    fs.writeFile('youtube.json', JSON.stringify(info, null, 2), function (err) {
+    fs.writeFile('result.json', JSON.stringify(info, null, 2), function (err) {
       if (err) console.log(err);
     });
   })

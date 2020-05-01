@@ -1,6 +1,6 @@
 # social-direct-link
 
-Get direct link from youtube video or twitch stream
+Get direct link from youtube, soundcloud, vimeo, twitch channel, etc...
 
 ## Installation
 
@@ -8,53 +8,10 @@ Get direct link from youtube video or twitch stream
 git clone https://github.com/maxgfr/social-direct-link.git
 cd social-direct-link
 npm install
-node youtube.js
-node twitch.js
+npm start
 ```
 
-## Twitch result
-
-```json
-[
-  {
-    "quality": "Source",
-    "resolution": "1920x1080",
-    "url": "https://video-weaver.cdg02.hls.ttvnw.net/v1/playlist/CpADWYihUClM0q8tc9TdvfdwnDOAo8tcVkISvo8r_MTojO6tckKXMrvwXn9YpCjLN5brB0V5bYOz_T_QT4a-PzsTIPqAAeuAPh7Rd61B2weor3DSVqC3NSeqxbBF-fbgNR6Sque8Kpjrmg_DWPX1Iu4YQy5xGnbbixaSJYOkhdBSU_YiAxHCVgfivv8eAAoUn5qk86I4S5EjaJZJBzP-JcMkKjykTizhXlmaOzEfDJ5DDvDVsx7VOUjYiDV5P8GNEvOVnOTSdXYuamVf_vTa-MK7yYLcQPZT-yxBelXB3k6VKWfL7rjxdgPWWzQ5DQPsHJTfNcoXO3f-vxaWrfu-W5U4Xgbk78jqH8oodgSvMf2VsjyeIWB950p4HLxs1MmREx03V724aF98TPrsjVRH3zceaUdlF5pMpI7UuyqVxJIaOsCQXonU2aejgpG0u8vB1940z1KQB0alpriMvoeKBOtrjvTwhiua2W-kBDI2wMGDPQ2484-BguqP9rwI-0mH3eW1t-1dyIUGVW_aivdP3dBKVxIQssoIA1LDxJ66LogqEo6AJxoMxwO22H0iYlBlbiJl.m3u8"
-  },
-  {
-    "quality": "720p60",
-    "resolution": "1280x720",
-    "url": "https://video-weaver.cdg02.hls.ttvnw.net/v1/playlist/Co4DmfZRs41NZvklC0-vGQqtwB3rEKLlNLIKHoKcWONk727sfxSqmIEdJ3AsOpiX9mSWpVuim0_5snuQmCuHmfujzEv2DhxRzQ-uETMeT542y66LnOsRxpihBtoku_nrU4ZRA7qpLpc6imTPn6CzJGMIRHuExRKIfyauXQktYyRBEEuou7pK4WQdmEvvOckrNpZBUzf1AbDMhyV-Q8vlOMvZwPExq626eXGuOt8XbHbipYIWKy6SiY7gk_157gcAfwUkHcACM8bNEtHYMHfgOErEdKQvcjBKAIo6b4viLGqL1QeyTFdaZ33emZbaX9tb7XHECHQjMnteeDuOEaAjc5KZBZF9zBIB9yMXy3cDq_vW5AVcnTnCRcG5QbkqioawLgqDu2an4Zv0I_76WH7pXv_i57-o-D2zDKAN5H6hBTrL5j__W1O8fCQp5BOxYVpEsEohTlCUwyI1PfmSLBubeFOeCAuon0XMEql9Tmx8nPCsXpA2PvYTht_7tbp4m9u790r0H9m4jfRxcXx3tsZh2eISEC2g3aGqfN4gVU4Wheoz-LsaDJdiiK7C8L2KM3oNXA.m3u8"
-  },
-  {
-    "quality": "720p30",
-    "resolution": "1280x720",
-    "url": "https://video-weaver.cdg02.hls.ttvnw.net/v1/playlist/Co4DkmtRM7x33YlxsgF1FuN-OAzOPSiBKbRCgbIyzNmQQ7b5CZ2qQ8Cmx0VrSQmgoW9vFVkC2uNGvxfNN8HMJYHUf9aqkFJ_dUZ104T3daNEkEy5Umawbt2G9CuQZBlyB1N5VOkw4M2TisdZ1EdQNg0QOvhb7EGXNKc0XiTcKQA1vCeYUCOsRjVDzavoCDSSNjmK37SuluQezFWkiMjoWmrysm6zzg0oakxz9jY58msPYSJfnltITVFq7vBDT7yfy3tAtWXRDqKa7AbrFjUSWQpNwxAeQU0h8jXSudga4DZb8zldwvT-kj69xmkN2-UKy1Kj1yoAzfAt8rvX8TGDG2hFylg6a6QX0BTViAVOel3bcJU5JgFugLkx__T0X6jiGLtP4wFCGS9w9PsMzBUvnMSyKUXT1RXg8Ctvao6UVsXMekR9ZYZ33lwy183pmxhk9AvpYHBJLJKy8c-MDudJ_7LZrGjGqKqAD4KZALwWtpGts7luzQwf6hC8SA3VPNF8fB8G7AMFLNJRjcx6L190moASEB_v13yoURATfH5qXQF_eCIaDEOMy7PEv9HJLCYTMQ.m3u8"
-  },
-  {
-    "quality": "480p30",
-    "resolution": "852x480",
-    "url": "https://video-weaver.cdg02.hls.ttvnw.net/v1/playlist/Co4DzsIPtIyC5Zv9YfAp55NoobO24i1ojL6_1ThDw6R8HC6tNMAa3-_VfGtjUO3VP8nr7o41acAAzQCeQ_alEf573CAQabdHteopXC1aliDcge121FGGFvcN5xeb4OavyftwXB0d6cgLZXMClMYtCcJO3tlDjJKtmwhFwOFPni2EL3VvbcXF4iU1UlJfuBymMGQd8lXVDo75NWFdQ3620Pqe4szCidkwSq4uGCTbgYQIMqQXJoPKsBYCxdCsVyiRix9rV31IbBBVWk75jkEYwV2DJ0H9V3snkuYM4DX5fWMeXquYv-_E5GRipRKhFtUGIMLRGVwo9qFY73zW__VxRo0VQ-p3VbEffGBc1pXdiez4wa86_bW0mjosktOrTKWaowGEAjMox-TT2Y7uF1IxLL4Wq-8U0jE4Yp70myJiifvVxH8IDYbAwn6pa8Yo9RtKsQ-ogsrxDlnJO4Cgi92yVyLLjFOT-Y4_jsm_UcMea7AT3KC5Z_BnF5iRFmgNECjwGVRTO6t0UmEkD-4QhJyDzagSEEgqc4g0k-91eDCzkXCZ0LkaDFS1E6CevtZCCFTxrQ.m3u8"
-  },
-  {
-    "quality": "360p30",
-    "resolution": "640x360",
-    "url": "https://video-weaver.cdg02.hls.ttvnw.net/v1/playlist/Co4D_bWYj47neyYcMgZeRgP5KWt3PmAIFSIZMv62UTHkddrjWwG_J7iMwIAEqp1Z4lr8g7iTIEx7HUUik8HDYYtCWJwtrczsNWnP98knniEzkgad-Ci4-QSP2gbuHvLDPhLEFd3H_qf7QZO6_icA8V0ClbE4XsGMVBNMfmjltJnIBGk3Lzml7Y3F-55x8GgfswugIiQRByNs4JDA6F21N88kXp1cZ4eE2Coeqo4A4OYBV1fPSqRMPgQbYYrkQZQXEsy4OkFs2TGtHWcgTEw4vps-XxXgE4olUUNM-fnVF4zPQ07ciLrjRuzlufNy38QcJ_-X5G3c9CB4aKG-rXtXAWmIBMaDRIcCQXEcmARhMlOws7FD8XP2dceZCvrDcH2Jjd6GK59W62tEghWPv9er1xJhjAmo3CSSx5F7Y_qj_6_-9Oyh8ypf00XqeAaxtjFty9VCtrPamsUxIcpI5VNwxW0g-yw0qWUL9FuyeKR3SlzvgHz3TU2BpIjOsQac8mVqcvhrUjXFhgJgYIiz5jQ9lbgSECmx0_OFhsoqpzETKKG_MDAaDKvfFJ3M4HBC49Y-rg.m3u8"
-  },
-  {
-    "quality": "160p30",
-    "resolution": "284x160",
-    "url": "https://video-weaver.cdg02.hls.ttvnw.net/v1/playlist/Co4DYimj9aBUtLy5zLjy5di-O1xfrTAbz6c3NxXmY-hfHOwYiHGA8LKV5YRszRV7_-CSGLGjd0XARE2RYB-8cg9HEiM1BpbA9winJwvEjKkOx3gNogtfmHrb35uUQMYGwy0fkP_IAtmIExrGGErbnVROfIh3NwKvoU2d8WgdCS-7FIEK7E_mEAduokOcER5JBiwig2li9b6LGf5VJfJeJO4Rs7S3fOagqWbFCq2mMGRlvbALS1Ygf5jEAB3LLk-luWF9EUlCWUURuSk6XtO1wcA0798znyoYkyHAwRHXPoa5uzqvpugprlihUEr4rMV1BAcqm18p7UX0jwuPtUSK1YY4h8CkGgKOYypaqpu2zAxJBtDfVJs2Q1oDF-kSpMOeaR97uw84RW5-HTNzXXLP-GsjSunl24BO0aRtAoeOidjNKIYnhkEAVuE6pC1l1rTKYtd07MRCh7sNQLwehHmc-L8KREGtx3zZTLGdGTHiixBdtei7ngU7RrBp0UftWA5gCjZ46mbW0ucFm_LuWkzCjX8SEGNps1f275Bqt7XMkY1cFdoaDMzk2pg8yR8wt4Zt2g.m3u8"
-  },
-  {
-    "quality": "Audio Only",
-    "resolution": null,
-    "url": "https://video-weaver.cdg02.hls.ttvnw.net/v1/playlist/CpYD_UUfXkYm4JsGCOemYmyqxvWEMowkL4gvUGvwPMjxRSeZvF94mHl9RRr7udci4jlBDkMzoIdRp7311SgHqyDAWoZAPM7Ltb6cGa67cox9KHIdM9qK9ixNvavtUe9Icvsb86rqpAgth44FHY1u2V6MT7EjU_H9EVour02tJzwlc-ALmcbI4MiP3ok4edbri1d3NwKBpK-Dgj8NfVX_ArtClEYQRhhRaMkG1u0H8fGHTvfGIWoXEul_UFLzgt-RRm-rIUpxF29td1rWeOycEFbSnTvqx43I11sqW_0Pq6st3O9GtYK-l1H-H5mxdSg1JVFtz4EFIiZNF8M4FbwhSsFw7ZXuyFlwwcOMXfbvPtm0LrA7c5DGgad4gOZ-Kn6qPuAdBtsPsUbd-nQQLagf4QKt6kRHKsozmHM1I_iIcoPgrpLe7hi_R7hOiIa1epfArEgUNdP0ndEDrw9jEFc0iYyFyTod1ybSn7xGXx07PKfCM6RO27csrPpAY5wssEVewQA3szHmZjo3gN4kjS9mZ8pRSFtckMh7-xIQZ1plPWMRFlVN3ifdw3WVdRoMyy4NJcJhJd6sr1Bq.m3u8"
-  }
-]
-```
-
-## Youtube result
+## Result
 
 ```json
 {
